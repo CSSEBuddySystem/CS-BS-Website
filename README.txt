@@ -30,13 +30,14 @@ ________________________________________________________________________________
 2.0 Batch File Information
 ________________________________________________________________________________________
 
-	For those of you scrubs not familiar with command prompt commands I made some batch
-	commands located in the "bat" directory.
+	For those of you scrubs not familiar with command prompt commands I made some
+	batch commands located in the "bat" directory.
 
-	1.	"InstallPackages.bat" - Installs all packages listed in the "package.json", this
-		is were we would add MongoDB and other fancy technologies.
+	1.	"InstallPackages.bat" - Installs all packages listed in the "package.json",
+		this is were we would add MongoDB and other fancy technologies.
 
-	2.	"ServerStart.bat" - Starts a local instance of the server for rapid development.
+	2.	"ServerStart.bat" - Starts a local instance of the server for rapid
+		development.
 	
 	
 	
