@@ -16,16 +16,16 @@
 0.0 Stack Information
 ________________________________________________________________________________________
 
-	CSS Framework:									??? (Boostrap, Foundation, GIO)
-	CSS Preprocessor:								??? (LESS/SASS/ETC.)
-	HyperText Preprocessor:							??? (NONE*/HAML/JADE)
-	Client-side Framework:							??? (ANGULARJS/JQUERY/METEOR)
-	Database Interface:								??? (NHibernate, ???)
-	Database Language:								??? (MongoDB, MySQL)
-	Server-side Framework:							Express
-	Server-side Environment:						Node.js
-	Framework Architecture:							??? (MVC, MVVM, MVP)
-	Operating System:								??? (Cheap w/ database)
+	CSS Framework:			??? (Boostrap, Foundation, GIO)
+	CSS Preprocessor:		??? (LESS/SASS/ETC.)
+	HyperText Preprocessor:		??? (NONE*/HAML/JADE)
+	Client-side Framework:		??? (ANGULARJS/JQUERY/METEOR)
+	Database Interface:		??? (NHibernate, ???)
+	Database Language:		??? (MongoDB, MySQL)
+	Server-side Framework:		Express
+	Server-side Environment:	Node.js
+	Framework Architecture:		??? (MVC, MVVM, MVP)
+	Operating System:		??? (Cheap w/ database)
 
 1.0 Overview
 ________________________________________________________________________________________
