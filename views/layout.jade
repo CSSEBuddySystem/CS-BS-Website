@@ -1,7 +1,53 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		script(type='text/javascript' src='/scripts/jquery-1.11.3.min.js')
+		script(type='text/javascript' src='/scripts/angular.min.js')
+		
+		
+		
+	body
+	
+	
+		header
+			div.navbar.navbar-default
+				p this is a navbar (still not decided if this will be sidebar or not) loaded in "layout.jade"
+				
+				
+		block content
+		
+		
+		footer
+			h4 footer loaded in "layout.jade"
+			div#jqueryTest Javascript test didn't fire
+			div#angularTest angular.js test didn't fire
+			div#javaScriptTest Javascript FAILED
+
+			
+			
+			
+	script(type='text/javascript').
+		function testJQuery() {
+			if (typeof jQuery == 'undefined') {
+				document.getElementById("jqueryTest").innerHTML = "jQuery NOT loaded correctly";
+			}
+			else {
+				document.getElementById("jqueryTest").innerHTML = "jQuery loaded correctly";
+			}
+		}
+		
+		function testAngular() {
+			if (typeof angular == 'undefined') {
+				document.getElementById("angularTest").innerHTML = "Angular NOT loaded correctly";
+			}
+			else {
+				document.getElementById("angularTest").innerHTML = "Angular loaded correctly";
+			}
+		}
+		
+		testJQuery();
+		testAngular();
+		document.getElementById("javaScriptTest").innerHTML = "Javascript SUCCESSFUL";
