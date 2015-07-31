@@ -1,0 +1,126 @@
+doctype html
+html
+	head
+		title= title
+		
+		//Why load from CDN and not from file? Users typically have CDN'd version already cached.
+		
+		//Some of these resource imports should be added to the bottom of the page? Lets keep them here for now,
+		//just so we have them in one place in case we want to remove/change them.
+		
+		//Material Design Lite CDN (For Production) API - http://www.getmdl.io/components/index.html
+		//link(rel='stylesheet' href='https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css')
+		//script(type='text/javascript' src='https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js')
+		//link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+		
+		//Material Design Lite Local (For Development)
+		link(rel='stylesheet' href='/mdl/material.min.css')
+		script(type='text/javascript' src='/mdl/material.min.js')
+		link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+		
+		//Bootstrap (do we want it?)
+		//link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+		//link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+		//script(rel='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+		
+		//JQuery
+		script(type='text/javascript' src='/scripts/jquery-1.11.3.min.js')
+		
+		//AngularJS
+		script(type='text/javascript' src='/scripts/angular.min.js')
+		
+		//Customized stylesheet
+		link(rel='stylesheet' href='/stylesheets/style.css')
+		
+	body
+		div.mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.mdl-layout--overlay-drawer-button.has-drawer.is-upgraded
+			header.mdl-layout__header
+				div.mdl-layout__header-row
+					div.mdl-layout-spacer
+					div.mdl-textfield.mdl-js-textfield.mdl-textfield--expandable.mdl-textfield--floating-label.mdl-textfield--align-right
+						label.mdl-button.mdl-js-button.mdl-button--icon(for="fixed-header-drawer-exp")
+							i.material-icons search
+						div.mdl-textfield__expandable-holder
+							input.mdl-textfield__input(type="text", name="sample", id="fixed-header-drawer-exp")
+			div.mdl-layout__drawer
+				span.mdl-layout-title _bLayout
+				nav.mdl-navigation
+					a.mdl-navigation__link Taylor Swift
+					a.mdl-navigation__link Swift Taylor
+					a.mdl-navigation__link Saylor Twift
+					a.mdl-navigation__link Rolyat Tfiws
+					
+			main.mdl-layout__content
+				div.page-content
+					block content
+					
+					footer.mdl-mega-footer
+						div.mdl-mega-footer__middle-section
+							div.mdl-mega-footer__drop-down-section
+								input.mdl-mega-footer__heading-checkbox(type=checkbox, checked)
+								h1.mdl-mega-footer__heading Drugs
+								ul.mdl-mega-footer__link-list
+									li
+										a(href="#") Link1
+									li
+										a(href="#") Link2
+									li
+										a(href="#") Link3
+									li
+										a(href="#") Link4
+							div.mdl-mega-footer__drop-down-section
+								input.mdl-mega-footer__heading-checkbox(type=checkbox, checked)
+								h1.mdl-mega-footer__heading Not Drugs
+								ul.mdl-mega-footer__link-list
+									li
+										a(href="#") Link1
+									li
+										a(href="#") Link2
+									li
+										a(href="#") Link3
+									li
+										a(href="#") Link4
+							div.mdl-mega-footer__drop-down-section
+								input.mdl-mega-footer__heading-checkbox(type=checkbox, checked)
+								h1.mdl-mega-footer__heading Not Drugs
+								ul.mdl-mega-footer__link-list
+									li
+										a(href="#") Link1
+									li
+										a(href="#") Link2
+									li
+										a(href="#") Link3
+									li
+										a(href="#") Link4
+							div.mdl-mega-footer__drop-down-section
+								input.mdl-mega-footer__heading-checkbox(type=checkbox, checked)
+								h1.mdl-mega-footer__heading Not Drugs
+								ul.mdl-mega-footer__link-list
+									li
+										a(href="#") Link1
+									li
+										a(href="#") Link2
+									li
+										a(href="#") Link3
+									li
+										a(href="#") Link4
+						div.mdl-mega-footer__bottom-section
+							div.mdl-logo CS BS
+							ul.mdl-mega-footer__link-list
+								li
+									a(href="#") Tacos
+								li
+									a(href="#") Burritos
+									
+	script(type='text/javascript').
+		console.log("jQuery Loaded: " + (typeof jQuery != 'undefined'));
+		console.log("Angular Loaded: " + (typeof angular != 'undefined'));
+		console.log("Javascript didn't crash: ");
+		
+		
+		
+		
+		
+		
+		
+		

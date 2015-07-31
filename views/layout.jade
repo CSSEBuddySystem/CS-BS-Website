@@ -2,52 +2,55 @@ doctype html
 html
 	head
 		title= title
-		link(rel='stylesheet', href='/stylesheets/style.css')
-		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		
+		
+		//Why load from CDN and not from file? Users typically have CDN'd version already cached.
+		
+		//Some of these resource imports should be added to the bottom of the page? Lets keep them here for now,
+		//just so we have them in one place in case we want to remove/change them.
+		
+		//Material Design Lite CDN (For Production) API - http://www.getmdl.io/components/index.html
+		//link(rel='stylesheet' href='https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css')
+		//script(type='text/javascript' src='https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js')
+		//link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+		
+		//Material Design Lite Local (For Development)
+		link(rel='stylesheet' href='/mdl/material.min.css')
+		script(type='text/javascript' src='/mdl/material.min.js')
+		link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+		
+		//Bootstrap (do we want it?)
+		//link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+		//link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+		//script(rel='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+		
+		//JQuery
 		script(type='text/javascript' src='/scripts/jquery-1.11.3.min.js')
+		
+		//AngularJS
 		script(type='text/javascript' src='/scripts/angular.min.js')
 		
-		
+		//Customized stylesheet
+		link(rel='stylesheet' href='/stylesheets/style.css')
 		
 	body
-	
-	
 		header
-			div.navbar.navbar-default
-				p this is a navbar (still not decided if this will be sidebar or not) loaded in "layout.jade"
-				
-				
+			p Nav stuff goes here
 		block content
 		
-		
 		footer
-			h4 footer loaded in "layout.jade"
-			div#jqueryTest Javascript test didn't fire
-			div#angularTest angular.js test didn't fire
-			div#javaScriptTest Javascript FAILED
-
-			
-			
-			
+			p footer stuff goes here
+					
+					
 	script(type='text/javascript').
-		function testJQuery() {
-			if (typeof jQuery == 'undefined') {
-				document.getElementById("jqueryTest").innerHTML = "jQuery NOT loaded correctly";
-			}
-			else {
-				document.getElementById("jqueryTest").innerHTML = "jQuery loaded correctly";
-			}
-		}
+		console.log("jQuery Loaded: " + (typeof jQuery != 'undefined'));
+		console.log("Angular Loaded: " + (typeof angular != 'undefined'));
+		console.log("Javascript didn't crash: ");
 		
-		function testAngular() {
-			if (typeof angular == 'undefined') {
-				document.getElementById("angularTest").innerHTML = "Angular NOT loaded correctly";
-			}
-			else {
-				document.getElementById("angularTest").innerHTML = "Angular loaded correctly";
-			}
-		}
 		
-		testJQuery();
-		testAngular();
-		document.getElementById("javaScriptTest").innerHTML = "Javascript SUCCESSFUL";
+		
+		
+		
+		
+		
+		
