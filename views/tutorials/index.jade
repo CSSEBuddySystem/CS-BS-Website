@@ -1,1 +1,15 @@
 extends _bLayout
+
+block content
+	div.mdl-card.mdl-shadow--2dp.title-card-wide
+		div.mdl-card__title(style="background: url('/images/tutorialTitle.gif') center / cover;")
+			h2.mdl-card__title-text Tutorials (with a dumb temp picture in the background)
+		div.mdl-card__supporting-text
+			p (tutorials desc and scope)
+
+	div.mdl-components.mdl-js-components.mdl-cell.mdl-cell--12-col
+		div.mdl-cell.mdl-cell--12-col.mdl-cell--12-col-tablet.mdl-cell--12-col-phone
+			p Parameters(tags?) go here
+
+		div.mdl-cell.mdl-cell--12-col.mdl-cell--12-col-tablet.mdl-cell--12-col-phone
+			p 1 card per tutorial goes here, organized based on the parameters(tags?). This will be a complicated database structure, so a hard coded implementation will be completed first for a feasibility study.

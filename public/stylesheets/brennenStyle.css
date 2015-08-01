@@ -1,0 +1,10 @@
+.title-card-wide.mdl-card {
+    width: 100%;
+}
+.title-card-wide > .mdl-card__title {
+    color: #fff;
+	height: 450px;
+}
+.title-card-wide > .mdl-card__menu {
+    color: #fff;
+}
