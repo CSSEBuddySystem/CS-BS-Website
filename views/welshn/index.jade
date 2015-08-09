@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	div.mdl-components.mdl-js-components.mdl-cell.mdl-cell--12-col
+		h1= title
+		div.mdl-cell.mdl-cell--6-col.mdl-cell--6-col-tablet.mdl-cell--12-col-phone
+			p Welcome to #{title} this is the content loaded in "index.jade"
+
+		div.mdl-cell.mdl-cell--6-col.mdl-cell--6-col-tablet.mdl-cell--12-col-phone
+			p Welcome to #{title} this is the content
+			a(href='/test') test
+			br
+			a(href='/brennen/') Brennen Test Area
+			br
+			a(href='/tutorials/') Tutorial Area
